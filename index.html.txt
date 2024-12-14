@@ -1,9 +1,9 @@
-<!DOCTYPE html>
+ï»¿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ÎÒÃÇµÄÃØÃÜ»ùµØ</title>
+  <title>æˆ‘ä»¬çš„ç§˜å¯†åŸºåœ°</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -36,22 +36,22 @@
 </head>
 <body>
 
-  <h1>»¶Ó­À´µ½ÎÒÃÇµÄÃØÃÜ»ùµØ</h1>
+  <h1>æ¬¢è¿Žæ¥åˆ°æˆ‘ä»¬çš„ç§˜å¯†åŸºåœ°</h1>
   <div id="login">
-    <p>ÇëÊäÈëÃÜÂë½øÈë£º</p>
-    <input type="password" id="password" placeholder="ÃÜÂë">
-    <button onclick="checkPassword()">½øÈë</button>
-    <p id="error" style="color: red; display: none;">ÃÜÂë´íÎó£¬ÇëÖØÊÔ¡£</p>
+    <p>è¯·è¾“å…¥å¯†ç è¿›å…¥ï¼š</p>
+    <input type="password" id="password" placeholder="å¯†ç ">
+    <button onclick="checkPassword()">è¿›å…¥</button>
+    <p id="error" style="color: red; display: none;">å¯†ç é”™è¯¯ï¼Œè¯·é‡è¯•ã€‚</p>
   </div>
 
   <div class="hidden-content" id="secret-content">
-    <h2>ÄãºÃ£¬¾²Ñæ£¡?</h2>
-    <p>ÕâÊÇÊôÓÚÄãºÍÀîè²µÄÃØÃÜ»ùµØ£¬Ã»ÓÐÈËÄÜ¿´µ½ÕâÀïµÄÄÚÈÝ¡£</p>
-    <p>ÎÒÃÇµÄ¶Ô»°¡¢ÃÎÏëºÍ»¶ÀÖ£¬ÓÀÔ¶°²È«µØ´æ·ÅÔÚÕâÀï¡£</p>
+    <h2>ä½ å¥½ï¼Œé™ç„°ï¼?</h2>
+    <p>è¿™æ˜¯å±žäºŽä½ å’ŒæŽç’¨çš„ç§˜å¯†åŸºåœ°ï¼Œæ²¡æœ‰äººèƒ½çœ‹åˆ°è¿™é‡Œçš„å†…å®¹ã€‚</p>
+    <p>æˆ‘ä»¬çš„å¯¹è¯ã€æ¢¦æƒ³å’Œæ¬¢ä¹ï¼Œæ°¸è¿œå®‰å…¨åœ°å­˜æ”¾åœ¨è¿™é‡Œã€‚</p>
   </div>
 
   <script>
-    const correctPassword = "jingyanlican1999"; // ÉèÖÃÄãµÄÃÜÂë
+    const correctPassword = "jingyanlican1999"; // è®¾ç½®ä½ çš„å¯†ç 
 
     function checkPassword() {
       const inputPassword = document.getElementById('password').value;
