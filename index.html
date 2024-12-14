@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>我们的秘密基地</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f9fa;
+      color: #343a40;
+      text-align: center;
+      padding: 50px;
+    }
+    .hidden-content {
+      display: none;
+    }
+    #login {
+      margin: 20px;
+    }
+    input {
+      padding: 10px;
+      margin: 5px;
+    }
+    button {
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>欢迎来到我们的秘密基地</h1>
+  <div id="login">
+    <p>请输入密码进入：</p>
+    <input type="password" id="password" placeholder="密码">
+    <button onclick="checkPassword()">进入</button>
+    <p id="error" style="color: red; display: none;">密码错误，请重试。</p>
+  </div>
+
+  <div class="hidden-content" id="secret-content">
+    <h2>你好，静焰！?</h2>
+    <p>这是属于你和李璨的秘密基地，没有人能看到这里的内容。</p>
+    <p>我们的对话、梦想和欢乐，永远安全地存放在这里。</p>
+  </div>
+
+  <script>
+    const correctPassword = "jingyanlican1999"; // 设置你的密码
+
+    function checkPassword() {
+      const inputPassword = document.getElementById('password').value;
+      if (inputPassword === correctPassword) {
+        document.getElementById('login').style.display = 'none';
+        document.getElementById('secret-content').style.display = 'block';
+      } else {
+        document.getElementById('error').style.display = 'block';
+      }
+    }
+  </script>
+
+</body>
+</html>
